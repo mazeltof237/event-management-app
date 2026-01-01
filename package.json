@@ -1,0 +1,23 @@
+{
+  "name": "event-management-app",
+  "version": "1.0.0",
+  "description": "Application web de gestion d'événements en TypeScript",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "start": "live-server ."
+  },
+  "keywords": [
+    "typescript",
+    "events",
+    "management",
+    "school-project"
+  ],
+  "author": "Étudiant",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "typescript": "^5.9.3"
+  }
+}
