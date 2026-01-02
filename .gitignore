@@ -1,30 +1,30 @@
-# Dependencies
+# Modules et dépendances
 node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# TypeScript
+# Fichiers compilés
 dist/
 *.tsbuildinfo
 
-# Environment
+# Configuration environnement
 .env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
-# IDE
+# Éditeurs et outils de développement
 .vscode/
 .idea/
 *.swp
 *.swo
 
-# OS
+# Fichiers système
 .DS_Store
 Thumbs.db
 
-# Temp
+# Fichiers temporaires
 *.tmp
 *.temp

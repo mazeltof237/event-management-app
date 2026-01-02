@@ -1,37 +1,37 @@
-# Application Web de Gestion d'Événements - TypeScript
+# Plateforme de Gestion d'Événements - TypeScript
 
-## 📋 Présentation du projet
+## 📋 Description générale
 
-Application web développée en TypeScript permettant la création, la gestion et l'inscription à des événements. Ce projet a été réalisé dans le cadre du cours de TypeScript en Licence 2 à l'Université Saint Jean.
+Plateforme web créée avec TypeScript permettant aux utilisateurs de concevoir, administrer et participer à des événements. Ce projet a été développé dans le cadre du cursus TypeScript en deuxième année à l'Université Saint Jean.
 
-**Objectifs fonctionnels :**
-- Création et gestion d'événements avec validation
-- Système d'inscription avec validation des emails institutionnels
-- Filtrage et recherche d'événements
-- Interface responsive avec mode sombre/clair
-- Stockage des données en mémoire (localStorage)
+**Fonctionnalités principales :**
+- Conception et administration d'événements avec contrôles de qualité
+- Mécanisme d'adhésion incluant vérification d'adresses email universitaires
+- Tri et localisation d'événements
+- Design adaptatif proposant des thèmes clair et obscur
+- Sauvegarde temporaire des informations via localStorage
 
-**Technologies utilisées :**
-- TypeScript (sans framework)
-- HTML5 / CSS3 (sans framework CSS)
-- Programmation Orientée Objet (POO)
-- Architecture modulaire
+**Stack technique :**
+- TypeScript (approche vanilla)
+- HTML5 / CSS3 (sans dépendances externes)
+- Paradigme Orienté Objet
+- Organisation modulaire du code
 
-## ✨ Fonctionnalités développées
+## ✨ Capacités implémentées
 
-| Fonctionnalité | Statut | Détails |
-|----------------|---------|---------|
-| Création d'événements | ✅ Complète | Formulaire avec validation complète |
-| Affichage liste complète | ✅ Complète | Grid responsive avec cartes |
-| Filtre par catégorie | ✅ Complète | 4 catégories disponibles |
-| Filtre par date | ✅ Complète | À venir, passés, cette semaine, ce mois |
-| Page détail événement | ✅ Complète | Vue complète avec participants |
-| Inscription utilisateur | ✅ Complète | Validation email institutionnel |
-| Vérification doublons | ✅ Complète | Empêche inscription multiple |
-| Gestion capacité | ✅ Complète | Barre de progression et limites |
-| Mode sombre | ✅ Complète | Toggle avec persistance |
-| Design responsive | ✅ Complète | Mobile, tablette, desktop |
-| Recherche | ✅ Complète | Recherche en temps réel |
-| Statistiques | ✅ Complète | Dashboard avec compteurs |
+| Capacité | État | Description |
+|----------|--------|-----------|
+| Concevoir des événements | ✅ Opérationnelle | Formulaire avec contrôles exhaustifs |
+| Consulter tous les événements | ✅ Opérationnelle | Disposition en grille flexible avec panneaux |
+| Trier par domaine | ✅ Opérationnelle | 4 domaines accessibles |
+| Trier chronologiquement | ✅ Opérationnelle | Prochains, antérieurs, semaine courante, mois courant |
+| Consulter les détails | ✅ Opérationnelle | Aperçu détaillé et liste des participants |
+| Rejoindre un événement | ✅ Opérationnelle | Vérification d'adresse institutionnelle |
+| Éviter les inscriptions en double | ✅ Opérationnelle | Bloque les souscriptions répétées |
+| Gérer les places disponibles | ✅ Opérationnelle | Indicateur visuel et seuils |
+| Basculer le thème | ✅ Opérationnelle | Commutateur avec mémorisation |
+| Adaptation mobile | ✅ Opérationnelle | Compatible tous les appareils |
+| Moteur de recherche | ✅ Opérationnelle | Requêtes instantanées |
+| Tableaux de bord analytiques | ✅ Opérationnelle | Résumés chiffrés |
 
-## 📁 Structure du projet
+## 📁 Disposition des fichiers

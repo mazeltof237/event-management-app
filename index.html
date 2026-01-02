@@ -3,159 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestion d'Événements - Université Saint Jean</title>
+    <title>Gestion d'Événements - TypeScript</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="20251102_180327.png">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <!-- Header -->
-        <header class="header">
-            <div class="logo">
-                <i class="fas fa-calendar-alt"></i>
-                <h1>Gestion d'Événements</h1>
-            </div>
-            <div class="header-actions">
-                <button id="themeToggle" class="btn-icon" title="Changer de thème">
-                    <i class="fas fa-moon"></i>
-                </button>
-                <button id="createEventBtn" class="btn-primary">
-                    <i class="fas fa-plus"></i> Créer un Événement
-                </button>
-            </div>
-        </header>
-
-        <!-- Main Content -->
-        <main class="main-content">
-            <!-- Sidebar -->
-            <aside class="sidebar">
-                <div class="sidebar-section">
-                    <h3><i class="fas fa-filter"></i> Filtres</h3>
-                    <div class="filter-group">
-                        <label for="categoryFilter">Catégorie</label>
-                        <select id="categoryFilter" class="form-select">
-                            <option value="">Toutes les catégories</option>
-                            <option value="conférence">Conférence</option>
-                            <option value="sport">Sport</option>
-                            <option value="atelier">Atelier</option>
-                            <option value="autre">Autre</option>
-                        </select>
-                    </div>
-                    <div class="filter-group">
-                        <label for="dateFilter">Date</label>
-                        <select id="dateFilter" class="form-select">
-                            <option value="all">Toutes les dates</option>
-                            <option value="upcoming">À venir</option>
-                            <option value="past">Passés</option>
-                            <option value="today">Aujourd'hui</option>
-                            <option value="week">Cette semaine</option>
-                            <option value="month">Ce mois</option>
-                        </select>
-                    </div>
-                    <button id="applyFilters" class="btn-secondary">
-                        <i class="fas fa-check"></i> Appliquer
-                    </button>
-                    <button id="resetFilters" class="btn-text">
-                        <i class="fas fa-redo"></i> Réinitialiser
-                    </button>
-                </div>
-
-                <div class="sidebar-section stats">
-                    <h3><i class="fas fa-chart-bar"></i> Statistiques</h3>
-                    <div class="stat-item">
-                        <span class="stat-label">Événements total</span>
-                        <span id="totalEvents" class="stat-value">0</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-label">À venir</span>
-                        <span id="upcomingEvents" class="stat-value">0</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-label">Inscriptions total</span>
-                        <span id="totalRegistrations" class="stat-value">0</span>
-                    </div>
-                </div>
-            </aside>
-
-            <!-- Main Content Area -->
-            <div class="content-area">
-                <!-- Events List -->
-                <section class="events-section">
-                    <div class="section-header">
-                        <h2><i class="fas fa-calendar-day"></i> Événements</h2>
-                        <div class="search-box">
-                            <i class="fas fa-search"></i>
-                            <input type="text" id="searchInput" placeholder="Rechercher un événement...">
-                        </div>
-                    </div>
-
-                    <div id="eventsContainer" class="events-grid">
-                        <!-- Les événements seront chargés dynamiquement ici -->
-                        <div class="loading">
-                            <i class="fas fa-spinner fa-spin"></i>
-                            <p>Chargement des événements...</p>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Event Details Modal (caché par défaut) -->
-                <div id="eventDetailsModal" class="modal">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h2 id="modalTitle">Détails de l'Événement</h2>
-                            <button id="closeModal" class="btn-icon">
-                                <i class="fas fa-times"></i>
-                            </button>
-                        </div>
-                        <div class="modal-body" id="modalBody">
-                            <!-- Contenu chargé dynamiquement -->
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Create Event Modal -->
-                <div id="createEventModal" class="modal">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h2>Créer un Nouvel Événement</h2>
-                            <button id="closeCreateModal" class="btn-icon">
-                                <i class="fas fa-times"></i>
-                            </button>
-                        </div>
-                        <form id="createEventForm" class="modal-body">
-                            <!-- Formulaire chargé dynamiquement -->
-                        </form>
-                    </div>
-                </div>
-
-                <!-- Registration Modal -->
-                <div id="registrationModal" class="modal">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h2>Inscription à l'Événement</h2>
-                            <button id="closeRegistrationModal" class="btn-icon">
-                                <i class="fas fa-times"></i>
-                            </button>
-                        </div>
-                        <form id="registrationForm" class="modal-body">
-                            <!-- Formulaire chargé dynamiquement -->
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </main>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <p>© 2025 Université Saint Jean - Projet TypeScript - Gestion d'Événements</p>
-            <p class="footer-info">
-                <i class="fas fa-user-graduate"></i> Licence 2 - Année académique 2025-2026
-            </p>
-        </footer>
+    <div id="app">
+        <!-- L'application se charge ici via TypeScript -->
+        <div class="loading-container">
+            <div class="loading-spinner"></div>
+            <p>Chargement de l'application...</p>
+        </div>
     </div>
-
-    <!-- Scripts -->
-    <script type="module" src="dist/main.js"></script>
+    
+    <!-- Charger le JavaScript compilé -->
+    <script src="dist/main.js"></script>
 </body>
 </html>

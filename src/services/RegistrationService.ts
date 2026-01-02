@@ -3,6 +3,9 @@ import { User } from '../models/User';
 import { Registration } from '../models/Registration';
 
 export class RegistrationService {
+    getRemainingSpaces(id: any, maxCapacity: any) {
+      throw new Error('Method not implemented.');
+    }
     private registrations: Registration[] = [];
     private users: User[] = [];
     private static instance: RegistrationService;
