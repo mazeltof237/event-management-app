@@ -33,5 +33,3 @@ Plateforme web créée avec TypeScript permettant aux utilisateurs de concevoir,
 | Adaptation mobile | ✅ Opérationnelle | Compatible tous les appareils |
 | Moteur de recherche | ✅ Opérationnelle | Requêtes instantanées |
 | Tableaux de bord analytiques | ✅ Opérationnelle | Résumés chiffrés |
-
-## 📁 Disposition des fichiers
